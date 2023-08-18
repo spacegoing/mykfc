@@ -1,0 +1,19 @@
+{
+    "version": "2.6.1-alpha.2",
+    "packages": [
+      "slice-tool-custom/",
+      "operator-custom/",
+      "matcher-example/",
+      "strategy-custom/"
+    ],
+    "command": {
+      "version": {
+        "allowBranch": [
+          "main",
+          "release/**",
+          "alpha/**"
+        ]
+      }
+    }
+  }
+  

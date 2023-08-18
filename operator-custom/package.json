@@ -1,0 +1,19 @@
+{
+  "name": "@kungfu-trader/examples-operator-custom",
+  "author": "kungfu-trader",
+  "version": "2.6.1-alpha.2",
+  "description": "KungFu Operator Custom",
+  "license": "Apache-2.0",
+  "private": true,
+  "kungfuConfig": {
+    "key": "KungfuOperatorCustom"
+  },
+  "scripts": {
+    "clean": "kfs operator clean",
+    "build": "kfs operator build",
+    "package": "kfs operator package"
+  },
+  "devDependencies": {
+    "@kungfu-trader/kungfu-sdk": "^2.6.1-alpha.2"
+  }
+}

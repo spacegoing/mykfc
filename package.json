@@ -1,0 +1,31 @@
+{
+    "name": "@kungfu-trader/kfx-demo-backtest",
+    "author": {
+        "name": "Kungfu Trader",
+        "email": "info@kungfu.link"
+    },
+    "description": "Kungfu Trader Demo Backtest",
+    "license": "UNLICENSED",
+    "private": true,
+    "main": "package.json",
+    "workspaces": {
+        "packages": [
+            "slice-tool-custom",
+            "operator-custom",
+            "matcher-example",
+            "strategy-custom"
+        ]
+    },
+    "scripts": {
+        "install": "node -e \"require('@kungfu-trader/kungfu-core').prebuilt('install')\"",
+        "foreach": "wsrun --serial --exclude-missing --fast-exit",
+        "build": "yarn foreach build",
+        "clean": "yarn foreach clean"
+    },
+    "dependencies": {
+        "@kungfu-trader/kungfu-core": "^2.6.2-alpha.0",
+        "cmake-js": "^7.2.1",
+        "lerna": "^5.0.0",
+        "wsrun": "^5.2.0"
+    }
+}
