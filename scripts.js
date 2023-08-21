@@ -1,6 +1,9 @@
+const fs = require('fs');
+const { exec } = require('child_process');
+
+
 const path = require('path');
 const os = require('os');
-console.log(process.argv[2]);
 
 const pkg_map = {
     "slicetool": ""

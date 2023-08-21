@@ -39,5 +39,5 @@ debug-example/
 # assemble demo result
 *.xls
 *.xlsx
-*.csv
 snapshot/
+snapshot.csv
