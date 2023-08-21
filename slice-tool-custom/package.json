@@ -1,0 +1,21 @@
+{
+  "name": "@kungfu-trader/custom-slice-tool",
+  "author": "kungfu-trader",
+  "version": "2.6.1-alpha.0",
+  "description": "KungFu Data Tool 101 - Demo",
+  "license": "Apache-2.0",
+  "private": true,
+  "kungfuConfig": {
+    "key": "KungfuSliceToolCustom"
+  },
+  "scripts": {
+    "clean": "kfs strategy clean",
+    "build": "kfs strategy build",
+    "package": "kfs  strategy package",
+    "test": "kfc -l info slicetool -t .\\dist\\KungfuSliceToolCustom\\KungfuSliceToolCustom.cp39-win_amd64.pyd --indexer_path ..\\month_indexer.py  -c md -g custom -n custom -b 20200102 -e 2021-01-02 --arguments ..\\data-clean\\snapshot.csv"
+
+  },
+  "devDependencies": {
+    "@kungfu-trader/kungfu-sdk": "^2.6.1-alpha.0"
+  }
+}

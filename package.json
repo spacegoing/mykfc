@@ -1,0 +1,44 @@
+{
+    "name": "@kungfu-trader/kfx-demo-backtest",
+    "author": {
+        "name": "Kungfu Trader",
+        "email": "info@kungfu.link"
+    },
+    "version": "0.1.0-alpha.0",
+    "description": "Kungfu Trader Demo Backtest",
+    "license": "UNLICENSED",
+    "private": true,
+    "main": "package.json",
+    "repository": {
+        "url": "https://github.com/kungfu-trader/kfx-demo-backtest.git"
+      },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+      },
+    "workspaces": {
+        "packages": [
+            "slice-tool-custom",
+            "operator-custom",
+            "matcher-example",
+            "strategy-custom"
+        ]
+    },
+    "scripts": {
+        "install": "node -e \"require('@kungfu-trader/kungfu-core').prebuilt('install')\"",
+        "foreach": "wsrun --serial --exclude-missing --fast-exit",
+        "build": "yarn foreach build",
+        "clean": "yarn foreach clean",
+        "slicetool": "yarn kfc -l info  slicetool -t ./slice-tool-custom/dist/KungfuSliceToolCustom/KungfuSliceToolCustom.cp39-win_amd64.pyd --indexer_path ./month_indexer.py -c md -g custom -n custom -b 2020-01-02 -e 2021-01-02 --arguments ./data-clean/snapshot.csv",
+        "operator": "yarn kfc -l info run ./operator-custom/dist/KungfuOperatorCustom/KungfuOperatorCustom.cp39-win_amd64.pyd --from_indexer ./month_indexer.py --to_indexer ./month_indexer.py -c operator -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-op -n custom-op",
+        "cpp_stg": "yarn kfc -l info run ./strategy-custom/dist/KungfuStrategyCustom/KungfuStrategyCustom.cp39-win_amd64.pyd -M ./matcher-example/dist/KungfuSimpleMatcher/KungfuSimpleMatcher.cp39-win_amd64.pyd --from_indexer ./month_indexer.py -c strategy -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-stg -n custom-stg",
+        "py_stg": "yarn kfc -l info run ./py_stg.py -M ./matcher-example/dist/KungfuSimpleMatcher/KungfuSimpleMatcher.cp39-win_amd64.pyd --from_indexer ./month_indexer.py -c strategy -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-stg -n custom-stg",
+        "report": "yarn py_stg --report ./report-py-example/src/python/KungfuSimplePythonReport" ,
+        "test": "node scripts.js"
+    },
+    "dependencies": {
+        "@kungfu-trader/kungfu-core": "^2.6.2-alpha.4",
+        "cmake-js": "^7.2.1",
+        "lerna": "^5.0.0",
+        "wsrun": "^5.2.0"
+    }
+}
