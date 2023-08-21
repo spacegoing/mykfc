@@ -1329,13 +1329,13 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@kungfu-trader/kungfu-app@^2.6.1":
-  version "2.6.1"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-app/2.6.1/1ae7e8888a1efeeeba1543967fbe697a1f508cae#1ae7e8888a1efeeeba1543967fbe697a1f508cae"
-  integrity sha512-bL+t2qETal0FrE7oPQixbPVhwFgdfokxoH7woiqsg9nqZUPvN/ksCzMZlyTdkLYJg1j0BIlTg1ZIKSWc90d8xw==
+"@kungfu-trader/kungfu-app@^2.6.2-alpha.5":
+  version "2.6.2-alpha.5"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-app/2.6.2-alpha.5/89392dd03a8555432f348b823d47be090a81faae#89392dd03a8555432f348b823d47be090a81faae"
+  integrity sha512-j4kvSyDdldwZDCAM5EdFYLzZxe7qRaH+5M2vhyFnUbhI1mztxS/QX3ElsDzmIElRZeddtQhpDvjjFtqpaviXow==
   dependencies:
     "@electron/remote" "^2.0.0"
-    "@kungfu-trader/kungfu-js-api" "^2.6.1"
+    "@kungfu-trader/kungfu-js-api" "^2.6.2-alpha.5"
     ant-design-vue "^3.2.9"
     core-js "^3.20.0"
     echarts "^5.3.3"
@@ -1348,25 +1348,16 @@
     sound-play "^1.1.0"
     vue "^3.2.34"
 
-"@kungfu-trader/kungfu-cli@^2.6.1":
-  version "2.6.1"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-cli/2.6.1/0860b9282d099634ccdb30f5d94ab6df9a4474fb#0860b9282d099634ccdb30f5d94ab6df9a4474fb"
-  integrity sha512-IZvQg+ag45FQVRczZaFZsUy/HkR+82R2iOcn2xn5crN9eiJRpVuDb+HAs5MJj3O4gifBg4rOpmr2JTU7/IlR/g==
+"@kungfu-trader/kungfu-cli@^2.6.2-alpha.5":
+  version "2.6.2-alpha.5"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-cli/2.6.2-alpha.5/8ca7def79a486e5af5775437dbaa926e5d858fbb#8ca7def79a486e5af5775437dbaa926e5d858fbb"
+  integrity sha512-RF3Gz8HQh11NdkhbYAqB91UhQBB22hAwu2Drj1SKBB5pac+w9p51qan4k+Xfci0R/QFUHNDXr5Ps4CI3syGa1w==
   dependencies:
-    "@kungfu-trader/kungfu-js-api" "^2.6.1"
+    "@kungfu-trader/kungfu-js-api" "^2.6.2-alpha.5"
     blessed "^0.1.81"
     core-js "^3.20.0"
 
-"@kungfu-trader/kungfu-core@^2.6.1":
-  version "2.6.1"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-core/2.6.1/04e6236a498f23ad02475e13dd215a9b6adc769e#04e6236a498f23ad02475e13dd215a9b6adc769e"
-  integrity sha512-EL1lJ2Wx3AVCTOkUa/iK5bzt/2wLb7Hf2/igNdor8Yry/qbNIGhN7nK5Bnf7P7vHvUmBITIl/66e5GZPyOzdQA==
-  dependencies:
-    "@mapbox/node-pre-gyp" "^1.0.0"
-    glob "^8.0.0"
-    sywac "^1.3.0"
-
-"@kungfu-trader/kungfu-core@^2.6.2-alpha.4":
+"@kungfu-trader/kungfu-core@^2.6.2-alpha.4", "@kungfu-trader/kungfu-core@^2.6.2-alpha.5":
   version "2.6.2-alpha.5"
   resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-core/2.6.2-alpha.5/c61d6030561f8d29522edf69cf35ddc8886a2dc5#c61d6030561f8d29522edf69cf35ddc8886a2dc5"
   integrity sha512-zYOnmTMeKWEn/SxdagAmxz63A6PY7YXPNdY/DBd8CHRS8qLc9KOpDL3y4wfHTm+/C5LnyqD1+91nDA/+KixTfw==
@@ -1375,13 +1366,13 @@
     glob "^8.0.0"
     sywac "^1.3.0"
 
-"@kungfu-trader/kungfu-js-api@^2.6.1":
-  version "2.6.1"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-js-api/2.6.1/c363460bfed65ffc78305500fdea9435ec52aff9#c363460bfed65ffc78305500fdea9435ec52aff9"
-  integrity sha512-Gb8pZR7y8qb8hv8huCiC2OGUXxJQwbTt0biHfFJbXyFiard6bF1RyWtnCY32GihmJagnX51fLmt3MqLWj7txQQ==
+"@kungfu-trader/kungfu-js-api@^2.6.2-alpha.5":
+  version "2.6.2-alpha.5"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-js-api/2.6.2-alpha.5/9decca4fc6c1ba010ee26596bfe922b581fb6810#9decca4fc6c1ba010ee26596bfe922b581fb6810"
+  integrity sha512-EqvIVAos9Pdq0ZXPEiL8S9JtpqyLAIxSYq/8+NY0uIf8+OGcM0yNSSLANrygTVCFZ1sWtxhg1gd+vnNW7+Y9cw==
   dependencies:
     "@fast-csv/format" "^4.3.5"
-    "@kungfu-trader/kungfu-core" "^2.6.1"
+    "@kungfu-trader/kungfu-core" "^2.6.2-alpha.5"
     cfonts "^2.10.0"
     chalk "^4.1.0"
     fast-csv "^4.3.5"
@@ -1396,21 +1387,21 @@
     vue "^3.2.34"
     vue-i18n "9.1.10"
 
-"@kungfu-trader/kungfu-sdk@^2.6.0-alpha.13", "@kungfu-trader/kungfu-sdk@^2.6.1-alpha.0", "@kungfu-trader/kungfu-sdk@^2.6.1-alpha.2":
-  version "2.6.1"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-sdk/2.6.1/30f01cd68a67636984f5320f6fb8dba772358b90#30f01cd68a67636984f5320f6fb8dba772358b90"
-  integrity sha512-nRdWvMyLaCmLCdqlO6DdDA3N9feJr89TgwHxZIkKgQck8FxC0qCfFCRqxUij3PWVrDn6bmA/l5LnqXWBr9IMIQ==
+"@kungfu-trader/kungfu-sdk@^2.6.2-alpha.4":
+  version "2.6.2-alpha.5"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-sdk/2.6.2-alpha.5/2332cae5b101236b32e8752476ec2eacf7f1ddfb#2332cae5b101236b32e8752476ec2eacf7f1ddfb"
+  integrity sha512-/If/SwxP65rFvbEHH9dKkemQ3UChErwl85DJU5m9BrMpHJst4nLXmBftEOKwAzztLUhtYX6QajxysYKIiWu+KQ==
   dependencies:
-    "@kungfu-trader/kungfu-app" "^2.6.1"
-    "@kungfu-trader/kungfu-cli" "^2.6.1"
-    "@kungfu-trader/kungfu-core" "^2.6.1"
-    "@kungfu-trader/kungfu-js-api" "^2.6.1"
-    "@kungfu-trader/kungfu-toolchain" "^2.6.1"
+    "@kungfu-trader/kungfu-app" "^2.6.2-alpha.5"
+    "@kungfu-trader/kungfu-cli" "^2.6.2-alpha.5"
+    "@kungfu-trader/kungfu-core" "^2.6.2-alpha.5"
+    "@kungfu-trader/kungfu-js-api" "^2.6.2-alpha.5"
+    "@kungfu-trader/kungfu-toolchain" "^2.6.2-alpha.5"
 
-"@kungfu-trader/kungfu-toolchain@^2.6.1":
-  version "2.6.1"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-toolchain/2.6.1/713f6c23b69c66adc433bc5cd5b40df05b3aeff1#713f6c23b69c66adc433bc5cd5b40df05b3aeff1"
-  integrity sha512-runPf4OX90X+4f9Y5Q5m3hF3NHuxYpPupVji7yJexbOL1WNNcrk07E0yGR2644wR5MHKiBd4k1gaBMEEBy5DdA==
+"@kungfu-trader/kungfu-toolchain@^2.6.2-alpha.5":
+  version "2.6.2-alpha.5"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-toolchain/2.6.2-alpha.5/f9862c0dda0df4c5aebb2b3c9fcf4f6743a6997c#f9862c0dda0df4c5aebb2b3c9fcf4f6743a6997c"
+  integrity sha512-Z1gw0iVP8Y6qdeoUbp35e0YX5rIXKgH6+sUM7lE78/WQpJKRo+2vpNzwpX3J5SrhkHtLSJVcuOltIYyOyXH/rQ==
   dependencies:
     "@babel/core" "^7.17.8"
     "@babel/plugin-proposal-class-properties" "^7.16.7"
