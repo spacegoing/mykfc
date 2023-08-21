@@ -1,10 +1,14 @@
 {
   "name": "@kungfu-trader/example-py-report",
-  "author": "kungfu-trader",
-  "version": "0.1.0",
+  "author": {
+        "name": "Kungfu Trader",
+        "email": "info@kungfu.link"
+    },
+  "version": "0.1.0-alpha.0",
   "description": "KungFu Report 10 python example",
-  "license": "Apache-2.0",
-  "private": true,
+  "license": "UNLICENSED",
+    "main": "package.json",
+  
   "kungfuConfig": {
     "key": "KungfuSimplePythonReport"
   },
@@ -15,6 +19,6 @@
     "format": "node ../../framework/core/.gyp/run-format-cpp.js src"
   },
   "devDependencies": {
-    "@kungfu-trader/kungfu-sdk": "^2.6.2-alpha.4"
+    "@kungfu-trader/kungfu-sdk": "~2.6.0 || ~2.6.2-0"
   }
 }
