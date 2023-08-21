@@ -1,7 +1,7 @@
 {
   "name": "@kungfu-trader/examples-operator-custom",
   "author": "kungfu-trader",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "KungFu Operator Custom",
   "license": "Apache-2.0",
   "private": true,
