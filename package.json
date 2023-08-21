@@ -4,10 +4,9 @@
         "name": "Kungfu Trader",
         "email": "info@kungfu.link"
     },
-    "version": "0.1.0-alpha.0",
+    "version": "0.1.0",
     "description": "Kungfu Trader Demo Backtest",
     "license": "UNLICENSED",
-    "private": true,
     "main": "package.json",
     "repository": {
         "url": "https://github.com/kungfu-trader/kfx-demo-backtest.git"

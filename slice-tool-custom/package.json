@@ -1,7 +1,7 @@
 {
   "name": "@kungfu-trader/custom-slice-tool",
   "author": "kungfu-trader",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "KungFu Data Tool 101 - Demo",
   "license": "Apache-2.0",
   "private": true,
