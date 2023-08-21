@@ -1,5 +1,5 @@
 {
-    "version": "2.6.1-alpha.2",
+    "version": "^2.6.2-alpha.4",
     "packages": [
       "slice-tool-custom/",
       "operator-custom/",
