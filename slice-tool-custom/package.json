@@ -1,10 +1,14 @@
 {
   "name": "@kungfu-trader/custom-slice-tool",
-  "author": "kungfu-trader",
+  "author": {
+        "name": "Kungfu Trader",
+        "email": "info@kungfu.link"
+    },
   "version": "0.1.0",
   "description": "KungFu Data Tool 101 - Demo",
-  "license": "Apache-2.0",
-  "private": true,
+  "license": "UNLICENSED",
+    "main": "package.json",
+  
   "kungfuConfig": {
     "key": "KungfuSliceToolCustom"
   },
@@ -16,6 +20,6 @@
 
   },
   "devDependencies": {
-    "@kungfu-trader/kungfu-sdk": "^2.6.2-alpha.4"
+    "@kungfu-trader/kungfu-sdk": "~2.6.0 || ~2.6.2-0"
   }
 }

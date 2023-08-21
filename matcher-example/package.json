@@ -1,10 +1,14 @@
 {
   "name": "@kungfu-trader/example_matcher",
-  "author": "kungfu-trader",
+  "author": {
+        "name": "Kungfu Trader",
+        "email": "info@kungfu.link"
+    },
   "version": "0.1.0",
   "description": "KungFu Matcher 101 - on quote",
-  "license": "Apache-2.0",
-  "private": true,
+  "license": "UNLICENSED",
+    "main": "package.json",
+  
   "kungfuConfig": {
     "key": "KungfuSimpleMatcher"
   },
@@ -14,6 +18,6 @@
     "package": "kfs  strategy package"
   },
   "devDependencies": {
-    "@kungfu-trader/kungfu-sdk": "^2.6.2-alpha.4"
+    "@kungfu-trader/kungfu-sdk": "~2.6.0 || ~2.6.2-0"
   }
 }
