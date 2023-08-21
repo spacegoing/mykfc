@@ -1357,7 +1357,7 @@
     blessed "^0.1.81"
     core-js "^3.20.0"
 
-"@kungfu-trader/kungfu-core@^2.6.2-alpha.4", "@kungfu-trader/kungfu-core@^2.6.2-alpha.5":
+"@kungfu-trader/kungfu-core@^2.6.2-alpha.5", "@kungfu-trader/kungfu-core@~2.6.0 || ~2.6.2-0":
   version "2.6.2-alpha.5"
   resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-core/2.6.2-alpha.5/c61d6030561f8d29522edf69cf35ddc8886a2dc5#c61d6030561f8d29522edf69cf35ddc8886a2dc5"
   integrity sha512-zYOnmTMeKWEn/SxdagAmxz63A6PY7YXPNdY/DBd8CHRS8qLc9KOpDL3y4wfHTm+/C5LnyqD1+91nDA/+KixTfw==
@@ -1387,7 +1387,7 @@
     vue "^3.2.34"
     vue-i18n "9.1.10"
 
-"@kungfu-trader/kungfu-sdk@^2.6.2-alpha.4":
+"@kungfu-trader/kungfu-sdk@~2.6.0 || ~2.6.2-0":
   version "2.6.2-alpha.5"
   resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-sdk/2.6.2-alpha.5/2332cae5b101236b32e8752476ec2eacf7f1ddfb#2332cae5b101236b32e8752476ec2eacf7f1ddfb"
   integrity sha512-/If/SwxP65rFvbEHH9dKkemQ3UChErwl85DJU5m9BrMpHJst4nLXmBftEOKwAzztLUhtYX6QajxysYKIiWu+KQ==
