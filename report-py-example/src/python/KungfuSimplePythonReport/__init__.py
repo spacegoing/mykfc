@@ -225,7 +225,7 @@ def sumerize(ctx) -> Text:
             "return_drawdown_ratio": "收益回撤比",
     }
     for key, value in statistics.items():
-        ctx.log.info("{}={}".format(key, value))
+        ctx.log.info("{}={}".format(term_sheet[key], value))
 
     return json.dumps(statistics, indent=4)
   
