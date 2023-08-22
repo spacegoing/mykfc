@@ -33,8 +33,7 @@
         "operator": "yarn kfc -l info run ./operator-custom/dist/KungfuOperatorCustom/KungfuOperatorCustom.cp39-win_amd64.pyd --from_indexer ./month_indexer.py --to_indexer ./month_indexer.py -c operator -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-op -n custom-op",
         "cpp_stg": "yarn kfc -l info run ./strategy-custom/dist/KungfuStrategyCustom/KungfuStrategyCustom.cp39-win_amd64.pyd -M ./matcher-example/dist/KungfuSimpleMatcher/KungfuSimpleMatcher.cp39-win_amd64.pyd --from_indexer ./month_indexer.py -c strategy -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-stg -n custom-stg",
         "py_stg": "yarn kfc -l info run ./py_stg.py -M ./matcher-example/dist/KungfuSimpleMatcher/KungfuSimpleMatcher.cp39-win_amd64.pyd --from_indexer ./month_indexer.py -c strategy -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-stg -n custom-stg",
-        "report": "yarn py_stg --report ./report-py-example/src/python/KungfuSimplePythonReport",
-        "test": "node scripts.js"
+        "report": "yarn py_stg --report ./report-py-example/src/python/KungfuSimplePythonReport"
     },
     "dependencies": {
         "@kungfu-trader/kungfu-app": "~2.6.0 || ~2.6.2-0",
