@@ -27,6 +27,7 @@
         "install": "node -e \"require('@kungfu-trader/kungfu-core').prebuilt('install')\"",
         "foreach": "wsrun --serial --exclude-missing --fast-exit",
         "format": "node ./node_modules/@kungfu-trader/kungfu-core/.gyp/run-format-cpp.js src",
+        "package": "kfs project",
         "build": "yarn foreach build",
         "clean": "yarn foreach clean",
         "slicetool": "yarn kfc -l info  slicetool -t ./slice-tool-custom/dist/KungfuSliceToolCustom/KungfuSliceToolCustom.cp39-win_amd64.pyd --indexer_path ./month_indexer.py -c md -g custom -n custom -b 2020-01-02 -e 2021-01-02 --arguments ./data-clean/snapshot.csv",
