@@ -7,7 +7,7 @@
     "description": "Kungfu Trader Demo Backtest",
     "license": "UNLICENSED",
     "private": true,
-    "version": "1.0.0-alpha.0",
+    "version": "1.0.0-alpha.1",
     "main": "package.json",
     "repository": {
         "url": "https://github.com/kungfu-trader/kfx-demo-backtest.git"
