@@ -89,10 +89,10 @@ public:
       // 取到 刚写入的 一帧数据。
       frame = current_frame();
       // 根据帧数据的类型字段，对无类型数据做一次类型转换。
-      // if (frame->msg_type() != Quote::tag or frame->data<Quote>().to_string() != quote.to_string())
-      // {
-      //   spdlog::info("the {}th frame: {} not qualified", i, frame->data<Quote>().to_string());
-      // }
+      if (frame->msg_type() != Quote::tag or frame->data<Quote>().to_string() != quote.to_string())
+      {
+        spdlog::info("the {}th frame: {} not qualified", i, frame->data<Quote>().to_string());
+      }
       // cursor移动到下一帧待写入数据的内存区域。
       next();
     }
