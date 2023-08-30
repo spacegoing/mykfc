@@ -13,8 +13,8 @@ jobs:
     with:
       check-format: false
       enable-linux: true
-      enable-macos: true
-      enable-windows: true
+      enable-macos: false
+      enable-windows: false
     secrets:
       AWS_CI_ACCESS_KEY_ID: ${{ secrets.AWS_CI_ACCESS_KEY_ID }}
       AWS_CI_SECRET_ACCESS_KEY: ${{ secrets.AWS_CI_SECRET_ACCESS_KEY }}

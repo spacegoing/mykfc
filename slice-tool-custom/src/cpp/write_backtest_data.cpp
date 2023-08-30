@@ -22,6 +22,7 @@ namespace fs = std::filesystem;
 KUNGFU_MAIN_SLICE_TOOL(TestCustomSliceTool)
 {
 public:
+  const int logInterval = 10000;
   using SliceTool::SliceTool;
   virtual void run() override
   {
@@ -79,6 +80,10 @@ public:
       ////!! 写入数据的相关接口
       // 写入数据 , 注意 第一个参数为数据首包本地时间戳， 第二个参数为 数据落盘本地时间戳。 后者严格 大于等于前者。
       write_at(rvTime, rvTime, location::PUBLIC, quote);
+
+      if (i % logInterval == 0) {
+        spdlog::info("{} rows written", i);
+      }
 
       ////!! 两个读取数据的相关接口
       // 取到 刚写入的 一帧数据。
