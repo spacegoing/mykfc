@@ -22,6 +22,7 @@ namespace fs = std::filesystem;
 KUNGFU_MAIN_SLICE_TOOL(TestCustomSliceTool)
 {
 public:
+  const int logInterval = 10000;
   using SliceTool::SliceTool;
   virtual void run() override
   {
@@ -80,14 +81,18 @@ public:
       // 写入数据 , 注意 第一个参数为数据首包本地时间戳， 第二个参数为 数据落盘本地时间戳。 后者严格 大于等于前者。
       write_at(rvTime, rvTime, location::PUBLIC, quote);
 
+      if (i % logInterval == 0) {
+        spdlog::info("{} rows written", i);
+      }
+
       ////!! 两个读取数据的相关接口
       // 取到 刚写入的 一帧数据。
       frame = current_frame();
       // 根据帧数据的类型字段，对无类型数据做一次类型转换。
-      if (frame->msg_type() != Quote::tag or frame->data<Quote>().to_string() != quote.to_string())
-      {
-        spdlog::info("the {}th frame: {} not qualified", i, frame->data<Quote>().to_string());
-      }
+      // if (frame->msg_type() != Quote::tag or frame->data<Quote>().to_string() != quote.to_string())
+      // {
+      //   spdlog::info("the {}th frame: {} not qualified", i, frame->data<Quote>().to_string());
+      // }
       // cursor移动到下一帧待写入数据的内存区域。
       next();
     }
