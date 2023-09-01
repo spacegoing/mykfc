@@ -39,23 +39,10 @@
         "report": "yarn py_stg --report ./report-py-example/src/python/KungfuSimplePythonReport"
     },
     "dependencies": {
-        "@kungfu-trader/kungfu-app": "~2.6.0 || ~2.6.2-0",
-        "@kungfu-trader/kungfu-core": "~2.6.0 || ~2.6.2-0",
-        "@kungfu-trader/kungfu-js-api": "~2.6.0 || ~2.6.2-0",
-        "@kungfu-trader/kungfu-toolchain": "~2.6.0 || ~2.6.2-0",
+        "@kungfu-trader/kungfu-core": "^2.6.2",
         "wsrun": "^5.2.0"
-    },
+      },
     "devDependencies": {
-        "@kungfu-trader/kfx-broker-sim": "~2.6.0 || ~2.6.2-0",
-        "@kungfu-trader/kungfu-cli": "~2.6.0 || ~2.6.2-0",
-        "@kungfu-trader/kungfu-sdk": "~2.6.0 || ~2.6.2-0"
-    },
-    "resolutions": {
-        "@kungfu-trader/kungfu-core": "~2.6.0 || ~2.6.2-0",
-        "@kungfu-trader/kungfu-cli": "~2.6.0 || ~2.6.2-0",
-        "@kungfu-trader/kungfu-sdk": "~2.6.0 || ~2.6.2-0",
-        "@kungfu-trader/kungfu-js-api": "~2.6.0 || ~2.6.2-0",
-        "@kungfu-trader/kungfu-app": "~2.6.0 || ~2.6.2-0",
-        "@kungfu-trader/kungfu-toolchain": "~2.6.0 || ~2.6.2-0"
-    }
+        "@kungfu-trader/kungfu-sdk": "^2.6.2"
+      }
 }
