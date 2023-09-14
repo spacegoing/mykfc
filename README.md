@@ -2,7 +2,6 @@
 
 ### 使用说明
 
-解压缩data-clean/snapshot.zip
 
 ```
 # 安装
