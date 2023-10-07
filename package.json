@@ -33,16 +33,17 @@
         "unzip": "python unzip.py",
         "postbuild": "yarn slicetool && yarn operator && yarn cpp_stg && yarn py_stg && yarn report",
         "slicetool": "yarn kfc -l info  slicetool -t ./slice-tool-custom/dist/KungfuSliceToolCustom/KungfuSliceToolCustom.cp39-win_amd64.pyd --indexer_path ./month_indexer.py -c md -g custom -n custom -b 2020-01-02 -e 2021-01-02 --arguments ./data-clean/snapshot.csv",
-        "operator": "yarn kfc -l info run ./operator-custom/dist/KungfuOperatorCustom/KungfuOperatorCustom.cp39-win_amd64.pyd --from_indexer ./month_indexer.py --to_indexer ./month_indexer.py -c operator -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-op -n custom-op",
-        "cpp_stg": "yarn kfc -l info run ./strategy-custom/dist/KungfuStrategyCustom/KungfuStrategyCustom.cp39-win_amd64.pyd -M ./matcher-example/dist/KungfuSimpleMatcher/KungfuSimpleMatcher.cp39-win_amd64.pyd --from_indexer ./month_indexer.py -c strategy -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-stg -n custom-stg",
-        "py_stg": "yarn kfc -l info run ./py_stg.py -M ./matcher-example/dist/KungfuSimpleMatcher/KungfuSimpleMatcher.cp39-win_amd64.pyd --from_indexer ./month_indexer.py -c strategy -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-stg -n custom-stg",
-        "report": "yarn py_stg --report ./report-py-example/src/python/KungfuSimplePythonReport"
+        "operator": "yarn kfc -l info run ./operator-custom/dist/KungfuOperatorCustom/KungfuOperatorCustom.cp39-win_amd64.pyd --from_indexer ./month_indexer.py --to_indexer ./month_indexer.py -c operator -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-op -n custom-op --time_interval 3600",
+        "cpp_stg": "yarn kfc -l info run ./strategy-custom/dist/KungfuStrategyCustom/KungfuStrategyCustom.cp39-win_amd64.pyd -M ./matcher-example/dist/KungfuSimpleMatcher/KungfuSimpleMatcher.cp39-win_amd64.pyd --from_indexer ./month_indexer.py -c strategy -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-stg -n custom-stg --time_interval 3600",
+        "py_stg": "yarn kfc -l info run ./py_stg.py -M ./matcher-example/dist/KungfuSimpleMatcher/KungfuSimpleMatcher.cp39-win_amd64.pyd --from_indexer ./month_indexer.py -c strategy -m backtest -b 2020-01-02 -e 2021-01-02 -g custom-stg -n custom-stg --time_interval 3600",
+        "report": "yarn py_stg --report ./report-py-example/src/python/KungfuSimplePythonReport",
+        "backtest_cfg": "yarn report -B backtest_config.json"
     },
     "dependencies": {
-        "@kungfu-trader/kungfu-core": "^2.6.2",
+        "@kungfu-trader/kungfu-core": "^2.6.4-alpha.8",
         "wsrun": "^5.2.0"
     },
     "devDependencies": {
-        "@kungfu-trader/kungfu-sdk": "^2.6.2"
+        "@kungfu-trader/kungfu-sdk": "^2.6.4-alpha.8"
     }
 }
