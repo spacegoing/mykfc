@@ -16,8 +16,5 @@
     "clean": "kfs operator clean",
     "build": "kfs operator build",
     "package": "kfs operator package"
-  },
-  "devDependencies": {
-    "@kungfu-trader/kungfu-sdk": "~2.6.0 || ~2.6.4-0"
   }
 }

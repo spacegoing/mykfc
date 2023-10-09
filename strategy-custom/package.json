@@ -16,8 +16,5 @@
     "clean": "kfs strategy clean",
     "build": "kfs strategy build",
     "package": "kfs strategy package"
-  },
-  "devDependencies": {
-    "@kungfu-trader/kungfu-sdk": "~2.6.0 || ~2.6.4-0"
   }
 }
