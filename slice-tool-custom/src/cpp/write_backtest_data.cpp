@@ -37,6 +37,14 @@ public:
     std::ifstream csvData(csv_path.string());
     std::string line;
     std::vector<std::vector<std::string>> parsedCsv;
+    std::unordered_map<std::string, std::string> product_exchange_map;
+    std::ifstream input_json_file("backtest_config.json");
+    nlohmann::json config_json;
+    input_json_file >> config_json;
+    for (auto& x : config_json["Commission"]["default"]) {
+      product_exchange_map.emplace(x["product_id"], x["exchange_id"]);
+    }
+    // spdlog::info("product_exchange_map {}", product_exchange_map["AU"]);
 
     for (int i = 0; std::getline(csvData, line); ++i)
     {
@@ -67,7 +75,7 @@ public:
 
       Quote quote{};
       quote.instrument_id = instrumentID.c_str();
-      quote.exchange_id = EXCHANGE_SHFE;
+      quote.exchange_id = product_exchange_map[get_product_id(instrumentID)].c_str();
       quote.ask_price[0] = ask;
       quote.bid_price[0] = bid;
       quote.ask_volume[0] = askVolume;
@@ -97,4 +105,15 @@ public:
       next();
     }
   }
+
+  std::string get_product_id(std::string instrumentID) {
+    std::string product_id;
+    for (char c : instrumentID) {
+        if (std::isalpha(c)) {
+            product_id += std::toupper(c);
+        } 
+    }
+    return product_id;
+  }
+
 };
