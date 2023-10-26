@@ -31,7 +31,7 @@
         "build": "yarn unzip && yarn foreach build",
         "clean": "yarn foreach clean",
         "unzip": "python unzip.py",
-        "postbuild": "yarn slicetool && yarn operator && yarn cpp_stg && yarn cfg",
+        "postbuild": "yarn py_slice && yarn operator && yarn cpp_stg && yarn cfg",
         "py_slice": "yarn kfc -l info  slicetool -t ./slice-tool-py/src/python/KungfuPythonSlicetool --indexer_path ./month_indexer.py -c md -g custom -n custom -b 2020-01-02 -e 2020-02-01 --arguments ./data-clean/snapshot.csv",
         "slicetool": "yarn kfc -l info  slicetool -t ./slice-tool-custom/dist/KungfuSliceToolCustom/KungfuSliceToolCustom.cpython-39-x86_64-linux-gnu.so --indexer_path ./month_indexer.py -c md -g custom -n custom -b 2020-01-02 -e 2020-02-01 --arguments ./data-clean/snapshot.csv",
         "operator": "yarn kfc -l info run ./operator-custom/dist/KungfuOperatorCustom/KungfuOperatorCustom.cp39-win_amd64.pyd --from_indexer ./month_indexer.py --to_indexer ./month_indexer.py -c operator -m backtest -b 2020-01-02 -e 2020-02-01 -g custom-op -n custom-op --time_interval 3600",
@@ -41,10 +41,10 @@
         "cfg": "yarn report -B backtest_config.json"
     },
     "dependencies": {
-        "@kungfu-trader/kungfu-core": "~2.6.0 || ~2.6.5-0",
+        "@kungfu-trader/kungfu-core": "~2.6.0 || ~2.6.7-0",
         "wsrun": "^5.2.0"
     },
     "devDependencies": {
-        "@kungfu-trader/kungfu-sdk": "~2.6.0 || ~2.6.5-0"
+        "@kungfu-trader/kungfu-sdk": "~2.6.0 || ~2.6.7-0"
     }
 }

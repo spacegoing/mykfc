@@ -57,6 +57,14 @@
     "@babel/highlight" "^7.22.10"
     chalk "^2.4.2"
 
+"@babel/code-frame@^7.16.7":
+  version "7.22.13"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.22.13.tgz#e3c1c099402598483b7a8c46a721d1038803755e"
+  integrity sha512-XktuhWlJ5g+3TJXc5upd9Ks1HutSArik6jf2eAjYFyIOf4ej3RN+184cZbzDvbPnuTJIUhPKKJE3cIsYTiAT3w==
+  dependencies:
+    "@babel/highlight" "^7.22.13"
+    chalk "^2.4.2"
+
 "@babel/compat-data@^7.20.5", "@babel/compat-data@^7.22.5", "@babel/compat-data@^7.22.6", "@babel/compat-data@^7.22.9":
   version "7.22.9"
   resolved "https://registry.npmmirror.com/@babel/compat-data/-/compat-data-7.22.9.tgz#71cdb00a1ce3a329ce4cbec3a44f9fef35669730"
@@ -254,6 +262,11 @@
   resolved "https://registry.npmmirror.com/@babel/helper-string-parser/-/helper-string-parser-7.22.5.tgz#533f36457a25814cf1df6488523ad547d784a99f"
   integrity sha512-mM4COjgZox8U+JcXQwPijIZLElkgEpO5rsERVDJTc2qfCDfERyob6k5WegS14SX18IIjv+XD+GrqNumY5JRCDw==
 
+"@babel/helper-validator-identifier@^7.22.20":
+  version "7.22.20"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.20.tgz#c4ae002c61d2879e724581d96665583dbc1dc0e0"
+  integrity sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==
+
 "@babel/helper-validator-identifier@^7.22.5":
   version "7.22.5"
   resolved "https://registry.npmmirror.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.5.tgz#9544ef6a33999343c8740fa51350f30eeaaaf193"
@@ -288,6 +301,15 @@
   integrity sha512-78aUtVcT7MUscr0K5mIEnkwxPE0MaxkR5RxRwuHaQ+JuU5AmTPhY+do2mdzVTnIJJpyBglql2pehuBIWHug+WQ==
   dependencies:
     "@babel/helper-validator-identifier" "^7.22.5"
+    chalk "^2.4.2"
+    js-tokens "^4.0.0"
+
+"@babel/highlight@^7.22.13":
+  version "7.22.20"
+  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.22.20.tgz#4ca92b71d80554b01427815e06f2df965b9c1f54"
+  integrity sha512-dkdMCN3py0+ksCgYmGG8jKeGA/8Tk+gJwSYYlFGxG5lmhfKNoAy004YpLxpS1W2J8m/EK2Ew+yOs9pVRwO89mg==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.22.20"
     chalk "^2.4.2"
     js-tokens "^4.0.0"
 
@@ -1302,13 +1324,13 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@kungfu-trader/kungfu-app@^2.6.5-alpha.3":
-  version "2.6.5-alpha.3"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-app/2.6.5-alpha.3/7caf2daf6a8d97c0477eaff01c5733de60759dce#7caf2daf6a8d97c0477eaff01c5733de60759dce"
-  integrity sha512-esk42nMjt5TQa0LR1ltZcIBexLPPgAh/i0xpi0BtTIjZFAWr6UlzmZe4rBY+5ZhVX0pW86SQGM0a19ixWQp5vg==
+"@kungfu-trader/kungfu-app@^2.6.7-alpha.2":
+  version "2.6.7-alpha.2"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-app/2.6.7-alpha.2/4140d11795ade0922b27952e77137097dd0f2f2d#4140d11795ade0922b27952e77137097dd0f2f2d"
+  integrity sha512-Kl/qS9lN8S/o4SygdhTrSyu3jiMRhPIj8lTy09ROKvRZ5X0hEcFDjZDYf9bAgDok/imKawmJbo2jnrqWYbsQVg==
   dependencies:
     "@electron/remote" "^2.0.0"
-    "@kungfu-trader/kungfu-js-api" "^2.6.5-alpha.3"
+    "@kungfu-trader/kungfu-js-api" "^2.6.7-alpha.2"
     "@types/mark.js" "^8.11.8"
     "@vueuse/core" "^10.4.1"
     ant-design-vue "^3.2.20"
@@ -1324,31 +1346,31 @@
     sound-play "^1.1.0"
     vue "^3.2.34"
 
-"@kungfu-trader/kungfu-cli@^2.6.5-alpha.3":
-  version "2.6.5-alpha.3"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-cli/2.6.5-alpha.3/b27065b415baac88ef33e969f3b9b2125cb3ed38#b27065b415baac88ef33e969f3b9b2125cb3ed38"
-  integrity sha512-BbWxLjb0TEy8E03WU2azv5hGP0A8+cyUpixTMj5w/++aO+vYg7IDedjDFfC+jvrdRfdDjzkzgL6GELePtAlsMw==
+"@kungfu-trader/kungfu-cli@^2.6.7-alpha.2":
+  version "2.6.7-alpha.2"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-cli/2.6.7-alpha.2/b9abe809a80023b36817e3a5b8e09f7940cd0738#b9abe809a80023b36817e3a5b8e09f7940cd0738"
+  integrity sha512-uIwvZBEvb2879YmoZJ6yqrwjGjNKfYkhCXkvwWT5tW1D+pIaNvGhvBm0kuv4HlCs+zqoF7Sf6CyePxpIMWOJTQ==
   dependencies:
-    "@kungfu-trader/kungfu-js-api" "^2.6.5-alpha.3"
+    "@kungfu-trader/kungfu-js-api" "^2.6.7-alpha.2"
     blessed "^0.1.81"
     core-js "^3.20.0"
 
-"@kungfu-trader/kungfu-core@^2.6.5-alpha.3", "@kungfu-trader/kungfu-core@~2.6.0 || ~2.6.5-0":
-  version "2.6.5-alpha.3"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-core/2.6.5-alpha.3/db1d7275b3f518371de5465319a510ae0169cb1f#db1d7275b3f518371de5465319a510ae0169cb1f"
-  integrity sha512-ebopKZXKdUuJh9PvYY7Bs76X5VHi/Eg6GJCfkM8QncXiZTZcAg2dWlX+gpPwb38Wx6ccnoVLe4L3KJ6V0oprew==
+"@kungfu-trader/kungfu-core@^2.6.7-alpha.2", "@kungfu-trader/kungfu-core@~2.6.0 || ~2.6.7-0":
+  version "2.6.7-alpha.2"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-core/2.6.7-alpha.2/7e1abdea8fa83c4578d21a6e914fc8e70f31f121#7e1abdea8fa83c4578d21a6e914fc8e70f31f121"
+  integrity sha512-TIZtMqpqV9+QULrJ5u2Hp6H1rbOdvN35EaZuZ7gcmIpJDXyF+aLJNNbjmTlygmhTolaWyNJBWoRVEXxJZx3iaA==
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.0"
     glob "^8.0.0"
     sywac "^1.3.0"
 
-"@kungfu-trader/kungfu-js-api@^2.6.5-alpha.3":
-  version "2.6.5-alpha.3"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-js-api/2.6.5-alpha.3/9da48da99faa5445344b3b7ec4f5aa805843bd71#9da48da99faa5445344b3b7ec4f5aa805843bd71"
-  integrity sha512-NtLSbJR59qYmjY7vsv3l6Ix8vyNIy1T+0BfocY8CWLZJN8BF8TldXjlqLJgjI4hosWg0gKKHZkJKg0cGvS7MJA==
+"@kungfu-trader/kungfu-js-api@^2.6.7-alpha.2":
+  version "2.6.7-alpha.2"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-js-api/2.6.7-alpha.2/95e8fed8ca78f69c4e5dca18119484402b6222b0#95e8fed8ca78f69c4e5dca18119484402b6222b0"
+  integrity sha512-BlOckh+EwaOLcwdkcclWrf4FeuGwz5CeSQcYhIzhKfslKfn9axNGvKlncPpmVg6SWsQCxCkUqfeeZTv0ffMBag==
   dependencies:
     "@fast-csv/format" "^4.3.5"
-    "@kungfu-trader/kungfu-core" "^2.6.5-alpha.3"
+    "@kungfu-trader/kungfu-core" "^2.6.7-alpha.2"
     cfonts "^2.10.0"
     chalk "^4.1.0"
     dayjs-business-days "^1.0.4"
@@ -1364,21 +1386,21 @@
     vue "^3.2.34"
     vue-i18n "9.1.10"
 
-"@kungfu-trader/kungfu-sdk@~2.6.0 || ~2.6.5-0":
-  version "2.6.5-alpha.3"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-sdk/2.6.5-alpha.3/9e1f48240f5c82d66f15b2d5e8e25b40623c1af0#9e1f48240f5c82d66f15b2d5e8e25b40623c1af0"
-  integrity sha512-YJNpbRS2cPxN0YZv7Fw7+hQJVkNnxFFfLfeKTYkwRQfkZrRd+/aPit7CFHr6tImPE4dqzlCunwxR+Qs/JL4pBA==
+"@kungfu-trader/kungfu-sdk@~2.6.0 || ~2.6.7-0":
+  version "2.6.7-alpha.2"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-sdk/2.6.7-alpha.2/87abb46cf583f4ceb90fa756a06fd20a2fd88144#87abb46cf583f4ceb90fa756a06fd20a2fd88144"
+  integrity sha512-Ltae4ZGVEZVeyU9CZXOP2FC7ccEmjA5q4x3Aj0QIJux/TFY63MdxJl62B5zw+lCQqZyDNqiZJRvpbheFt/x/5g==
   dependencies:
-    "@kungfu-trader/kungfu-app" "^2.6.5-alpha.3"
-    "@kungfu-trader/kungfu-cli" "^2.6.5-alpha.3"
-    "@kungfu-trader/kungfu-core" "^2.6.5-alpha.3"
-    "@kungfu-trader/kungfu-js-api" "^2.6.5-alpha.3"
-    "@kungfu-trader/kungfu-toolchain" "^2.6.5-alpha.3"
+    "@kungfu-trader/kungfu-app" "^2.6.7-alpha.2"
+    "@kungfu-trader/kungfu-cli" "^2.6.7-alpha.2"
+    "@kungfu-trader/kungfu-core" "^2.6.7-alpha.2"
+    "@kungfu-trader/kungfu-js-api" "^2.6.7-alpha.2"
+    "@kungfu-trader/kungfu-toolchain" "^2.6.7-alpha.2"
 
-"@kungfu-trader/kungfu-toolchain@^2.6.5-alpha.3":
-  version "2.6.5-alpha.3"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-toolchain/2.6.5-alpha.3/1d87d003cade3203e1ed7d47139723d93e6886d7#1d87d003cade3203e1ed7d47139723d93e6886d7"
-  integrity sha512-TiTRfsdSliUQse3wkqeI2lSbg5a5W7q3JNotS9ivlMlCo+px6nj7y6LADA+RqVzix+STfi26vfkQW1BkvmqhSw==
+"@kungfu-trader/kungfu-toolchain@^2.6.7-alpha.2":
+  version "2.6.7-alpha.2"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-toolchain/2.6.7-alpha.2/5fbe1b8372cc7485e58260eea3f99ce660b6e3cb#5fbe1b8372cc7485e58260eea3f99ce660b6e3cb"
+  integrity sha512-85HQkPvGSMPezWnS82DUWt10r1FLqVrsRswlcFoxBvtX8lfSJ1jFNDAwSU/wFovImCBey4EXWoBP6BiNmuv0jA==
   dependencies:
     "@babel/core" "^7.17.8"
     "@babel/plugin-proposal-class-properties" "^7.16.7"
@@ -1419,6 +1441,7 @@
     file-loader "^6.2.0"
     find-root "^1.1.0"
     find-yarn-workspace-root "^2.0.0"
+    fork-ts-checker-webpack-plugin "^9.0.0"
     fs-extra "^10.0.1"
     html-webpack-plugin "^5.5.0"
     less "^4.1.2"
@@ -3851,7 +3874,7 @@ core-util-is@~1.0.0:
   resolved "https://registry.npmmirror.com/core-util-is/-/core-util-is-1.0.3.tgz#a6042d3634c2b27e9328f837b965fac83808db85"
   integrity sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==
 
-cosmiconfig@^7.0.0:
+cosmiconfig@^7.0.0, cosmiconfig@^7.0.1:
   version "7.1.0"
   resolved "https://registry.npmmirror.com/cosmiconfig/-/cosmiconfig-7.1.0.tgz#1443b9afa596b670082ea46cbd8f6a62b84635f6"
   integrity sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA==
@@ -4092,6 +4115,11 @@ deepmerge@^1.5.2:
   version "1.5.2"
   resolved "https://registry.npmmirror.com/deepmerge/-/deepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
   integrity sha512-95k0GDqvBjZavkuvzx/YqVLv/6YYa17fz6ILMSf7neqQITCPbnfEnQvEgMPNjH4kgobe7+WIL0yJEHku+H3qtQ==
+
+deepmerge@^4.2.2:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.3.1.tgz#44b5f2147cd3b00d4b56137685966f26fd25dd4a"
+  integrity sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==
 
 default-gateway@^6.0.3:
   version "6.0.3"
@@ -5122,6 +5150,24 @@ follow-redirects@^1.0.0, follow-redirects@^1.14.0, follow-redirects@^1.15.0:
   version "1.15.2"
   resolved "https://registry.npmmirror.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
+
+fork-ts-checker-webpack-plugin@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/fork-ts-checker-webpack-plugin/-/fork-ts-checker-webpack-plugin-9.0.0.tgz#e12b9e6116d32b07a2dbc0ea08f62b1cea24d35a"
+  integrity sha512-Kw3JjsfGs0piB0V2Em8gCuo51O3p4KyCOK0Tn8X57oq2mSNBrMmONALRBw5frcmWsOVU7iELXXsJ+FVxJeQuhA==
+  dependencies:
+    "@babel/code-frame" "^7.16.7"
+    chalk "^4.1.2"
+    chokidar "^3.5.3"
+    cosmiconfig "^7.0.1"
+    deepmerge "^4.2.2"
+    fs-extra "^10.0.0"
+    memfs "^3.4.1"
+    minimatch "^3.0.4"
+    node-abort-controller "^3.0.1"
+    schema-utils "^3.1.1"
+    semver "^7.3.5"
+    tapable "^2.2.1"
 
 form-data@^4.0.0:
   version "4.0.0"
@@ -6735,7 +6781,7 @@ media-typer@0.3.0:
   resolved "https://registry.npmmirror.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
 
-memfs@^3.4.3:
+memfs@^3.4.1, memfs@^3.4.3:
   version "3.6.0"
   resolved "https://registry.npmmirror.com/memfs/-/memfs-3.6.0.tgz#d7a2110f86f79dd950a8b6df6d57bc984aa185f6"
   integrity sha512-EGowvkkgbMcIChjMTMkESFDbZeSh8xZ7kNSF0hAiAN4Jh6jgHCRS0Ga/+C8y6Au+oqpezRHCfPsmJ2+DwAgiwQ==
@@ -7042,6 +7088,11 @@ no-case@^3.0.4:
   dependencies:
     lower-case "^2.0.2"
     tslib "^2.0.3"
+
+node-abort-controller@^3.0.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/node-abort-controller/-/node-abort-controller-3.1.1.tgz#a94377e964a9a37ac3976d848cb5c765833b8548"
+  integrity sha512-AGK2yQKIjRuqnc6VkX2Xj5d+QW8xZ87pa1UK6yA6ouUyuxfHuMP6umE5QK7UmTeOAymo+Zx1Fxiuw9rVx8taHQ==
 
 node-addon-api@^1.6.3:
   version "1.7.2"
@@ -9032,7 +9083,7 @@ tail@^2.2.4:
   resolved "https://registry.npmmirror.com/tail/-/tail-2.2.6.tgz#24abd701963639b896c42496d5f416216ec0b558"
   integrity sha512-IQ6G4wK/t8VBauYiGPLx+d3fA5XjSVagjWV5SIYzvEvglbQjwEcukeYI68JOPpdydjxhZ9sIgzRlSmwSpphHyw==
 
-tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0:
+tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0, tapable@^2.2.1:
   version "2.2.1"
   resolved "https://registry.npmmirror.com/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
   integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==

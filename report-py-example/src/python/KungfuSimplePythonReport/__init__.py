@@ -186,6 +186,8 @@ def init(ctx):
     balance_result = BalanceResult(ctx, initial_capital=100000000, begin_time=ctx.now(), risk_free_rate=0.05)
 
 def on_quote(ctx, quote: lf.types.Quote):
+    balance_result.update(ctx.now(), ctx.bookkeeper)
+
     # ctx.log.info("on quote={}, at={}".format(quote, kft.strftime(ctx.now())))
     pass
 
