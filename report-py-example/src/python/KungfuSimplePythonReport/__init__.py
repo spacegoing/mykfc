@@ -93,6 +93,7 @@ class BalanceResult:
 
         asset = self.get_strategy_asset(bookkeeper)
         balance = self.capital + asset.realized_pnl + asset.unrealized_pnl - asset.accumulated_fee
+        self.fee = asset.accumulated_fee
         for index in reversed(range(n_period)):
             if index == 0:
                 self.balances.append(balance)
@@ -153,6 +154,7 @@ class BalanceResult:
             "loss_periods": loss_periods,
             "capital": self.capital,
             "end_balance": end_balance,
+            "total_fee": self.fee,
             "max_drawdown": max_drawdown,
             "max_ddpercent": max_ddpercent,
             "principal_max_ddpercent": principal_max_ddpercent,
@@ -184,6 +186,8 @@ def init(ctx):
     balance_result = BalanceResult(ctx, initial_capital=100000000, begin_time=ctx.now(), risk_free_rate=0.05)
 
 def on_quote(ctx, quote: lf.types.Quote):
+    balance_result.update(ctx.now(), ctx.bookkeeper)
+
     # ctx.log.info("on quote={}, at={}".format(quote, kft.strftime(ctx.now())))
     pass
 
@@ -212,6 +216,7 @@ def sumerize(ctx) -> Text:
             "loss_periods": "亏损周期数",
             "capital": "初始资金",
             "end_balance": "终止资金",
+            "total_fee": "总手续费",
             "max_drawdown": "最大回撤",
             "max_ddpercent": "最大回撤百分比",
             "principal_max_ddpercent": "相对本金最大回撤百分比",
