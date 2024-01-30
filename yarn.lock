@@ -1324,13 +1324,13 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@kungfu-trader/kungfu-app@^2.6.7-alpha.2":
-  version "2.6.7-alpha.2"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-app/2.6.7-alpha.2/4140d11795ade0922b27952e77137097dd0f2f2d#4140d11795ade0922b27952e77137097dd0f2f2d"
-  integrity sha512-Kl/qS9lN8S/o4SygdhTrSyu3jiMRhPIj8lTy09ROKvRZ5X0hEcFDjZDYf9bAgDok/imKawmJbo2jnrqWYbsQVg==
+"@kungfu-trader/kungfu-app@^2.7.1-alpha.29":
+  version "2.7.1-alpha.29"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-app/2.7.1-alpha.29/2cef6570b64c49cb29369d832459b1aba06ab792#2cef6570b64c49cb29369d832459b1aba06ab792"
+  integrity sha512-lJK1wiHO1yD/cFthJWtVEXAfUAu4mG0T0spBDbiGIfiECYNOfeZzvN4o2ft/cP8rEl97Zh6Radh1G/8rNwmvCw==
   dependencies:
     "@electron/remote" "^2.0.0"
-    "@kungfu-trader/kungfu-js-api" "^2.6.7-alpha.2"
+    "@kungfu-trader/kungfu-js-api" "^2.7.1-alpha.29"
     "@types/mark.js" "^8.11.8"
     "@vueuse/core" "^10.4.1"
     ant-design-vue "^3.2.20"
@@ -1338,39 +1338,42 @@
     echarts "^5.3.3"
     electron "19.1.8"
     electron-updater "^5.3.0"
+    github-markdown-css "^5.2.0"
     iconv-lite "^0.6.3"
     jschardet "^3.0.0"
     mark.js "^8.11.1"
     markdown-it "^13.0.1"
+    markdown-it-highlightjs "^4.0.1"
+    markdown-it-task-checkbox-pro "^1.0.0"
     pinia "^2.0.0"
     sound-play "^1.1.0"
     vue "^3.2.34"
 
-"@kungfu-trader/kungfu-cli@^2.6.7-alpha.2":
-  version "2.6.7-alpha.2"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-cli/2.6.7-alpha.2/b9abe809a80023b36817e3a5b8e09f7940cd0738#b9abe809a80023b36817e3a5b8e09f7940cd0738"
-  integrity sha512-uIwvZBEvb2879YmoZJ6yqrwjGjNKfYkhCXkvwWT5tW1D+pIaNvGhvBm0kuv4HlCs+zqoF7Sf6CyePxpIMWOJTQ==
+"@kungfu-trader/kungfu-cli@^2.7.1-alpha.29":
+  version "2.7.1-alpha.29"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-cli/2.7.1-alpha.29/54e90a1fdb51bbd7940d7e66a624c5dc67def87a#54e90a1fdb51bbd7940d7e66a624c5dc67def87a"
+  integrity sha512-YMJ2WwnnxlUV3B1cG15oTJNtF0HQ+lvpKcP3aI9fm1SwN7OKwqVJzslqOqOz/3pFtWUlzOaQ6/ygsqdot9NTIw==
   dependencies:
-    "@kungfu-trader/kungfu-js-api" "^2.6.7-alpha.2"
+    "@kungfu-trader/kungfu-js-api" "^2.7.1-alpha.29"
     blessed "^0.1.81"
     core-js "^3.20.0"
 
-"@kungfu-trader/kungfu-core@^2.6.7-alpha.2", "@kungfu-trader/kungfu-core@~2.6.0 || ~2.6.7-0":
-  version "2.6.7-alpha.2"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-core/2.6.7-alpha.2/7e1abdea8fa83c4578d21a6e914fc8e70f31f121#7e1abdea8fa83c4578d21a6e914fc8e70f31f121"
-  integrity sha512-TIZtMqpqV9+QULrJ5u2Hp6H1rbOdvN35EaZuZ7gcmIpJDXyF+aLJNNbjmTlygmhTolaWyNJBWoRVEXxJZx3iaA==
+"@kungfu-trader/kungfu-core@^2.7.1-alpha.29", "@kungfu-trader/kungfu-core@~2.7.0 || ~2.7.1-0":
+  version "2.7.1-alpha.29"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-core/2.7.1-alpha.29/d137a4f8585a8ccd899b2d2c1f65c21844daf5d3#d137a4f8585a8ccd899b2d2c1f65c21844daf5d3"
+  integrity sha512-g9nTTsPSalQy22qH5/uRT2qFhK+6zr6gNjHoJjzNBRfrmCriX/Hd2rrVV9oDApq52LfOjuvSKbU9jqwZ0AdNTg==
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.0"
     glob "^8.0.0"
     sywac "^1.3.0"
 
-"@kungfu-trader/kungfu-js-api@^2.6.7-alpha.2":
-  version "2.6.7-alpha.2"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-js-api/2.6.7-alpha.2/95e8fed8ca78f69c4e5dca18119484402b6222b0#95e8fed8ca78f69c4e5dca18119484402b6222b0"
-  integrity sha512-BlOckh+EwaOLcwdkcclWrf4FeuGwz5CeSQcYhIzhKfslKfn9axNGvKlncPpmVg6SWsQCxCkUqfeeZTv0ffMBag==
+"@kungfu-trader/kungfu-js-api@^2.7.1-alpha.29":
+  version "2.7.1-alpha.29"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-js-api/2.7.1-alpha.29/011cca3723df0fe3c6e71be7751d8190bea3d641#011cca3723df0fe3c6e71be7751d8190bea3d641"
+  integrity sha512-Ovov7QNG1U2/VPSJzkT/Ujb8Nye+gq0FYofZH3ixbTWUdyDTuU+loqJ65/KAZOTZ1Z692R1JZEqW7raGNTUBUg==
   dependencies:
     "@fast-csv/format" "^4.3.5"
-    "@kungfu-trader/kungfu-core" "^2.6.7-alpha.2"
+    "@kungfu-trader/kungfu-core" "^2.7.1-alpha.29"
     cfonts "^2.10.0"
     chalk "^4.1.0"
     dayjs-business-days "^1.0.4"
@@ -1386,21 +1389,21 @@
     vue "^3.2.34"
     vue-i18n "9.1.10"
 
-"@kungfu-trader/kungfu-sdk@~2.6.0 || ~2.6.7-0":
-  version "2.6.7-alpha.2"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-sdk/2.6.7-alpha.2/87abb46cf583f4ceb90fa756a06fd20a2fd88144#87abb46cf583f4ceb90fa756a06fd20a2fd88144"
-  integrity sha512-Ltae4ZGVEZVeyU9CZXOP2FC7ccEmjA5q4x3Aj0QIJux/TFY63MdxJl62B5zw+lCQqZyDNqiZJRvpbheFt/x/5g==
+"@kungfu-trader/kungfu-sdk@~2.7.0 || ~2.7.1-0":
+  version "2.7.1-alpha.29"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-sdk/2.7.1-alpha.29/02cec60956b10c9147e7bc6525abcd204d03f45e#02cec60956b10c9147e7bc6525abcd204d03f45e"
+  integrity sha512-qw6a9Pq6ZBlZQJHvSEd2gFtcUDrIqcrrwrQ+QIt7wIMPbOv4imcCV2VglZE3W18UpBEkC+W3445/nlY6T01KBg==
   dependencies:
-    "@kungfu-trader/kungfu-app" "^2.6.7-alpha.2"
-    "@kungfu-trader/kungfu-cli" "^2.6.7-alpha.2"
-    "@kungfu-trader/kungfu-core" "^2.6.7-alpha.2"
-    "@kungfu-trader/kungfu-js-api" "^2.6.7-alpha.2"
-    "@kungfu-trader/kungfu-toolchain" "^2.6.7-alpha.2"
+    "@kungfu-trader/kungfu-app" "^2.7.1-alpha.29"
+    "@kungfu-trader/kungfu-cli" "^2.7.1-alpha.29"
+    "@kungfu-trader/kungfu-core" "^2.7.1-alpha.29"
+    "@kungfu-trader/kungfu-js-api" "^2.7.1-alpha.29"
+    "@kungfu-trader/kungfu-toolchain" "^2.7.1-alpha.29"
 
-"@kungfu-trader/kungfu-toolchain@^2.6.7-alpha.2":
-  version "2.6.7-alpha.2"
-  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-toolchain/2.6.7-alpha.2/5fbe1b8372cc7485e58260eea3f99ce660b6e3cb#5fbe1b8372cc7485e58260eea3f99ce660b6e3cb"
-  integrity sha512-85HQkPvGSMPezWnS82DUWt10r1FLqVrsRswlcFoxBvtX8lfSJ1jFNDAwSU/wFovImCBey4EXWoBP6BiNmuv0jA==
+"@kungfu-trader/kungfu-toolchain@^2.7.1-alpha.29":
+  version "2.7.1-alpha.29"
+  resolved "https://npm.pkg.github.com/download/@kungfu-trader/kungfu-toolchain/2.7.1-alpha.29/bd64abfb55501ed4ebefac8919843f9be1698cfe#bd64abfb55501ed4ebefac8919843f9be1698cfe"
+  integrity sha512-tteJ+gZucl4DVxfh6633HF04ksyhUF1Srr1LEiK7dRabcBCfltQgkM4O7UJhKYmqZe/jF9etJWekF7XO2xFNjA==
   dependencies:
     "@babel/core" "^7.17.8"
     "@babel/plugin-proposal-class-properties" "^7.16.7"
@@ -5343,6 +5346,11 @@ git-sha1@^0.1.2:
   resolved "https://registry.npmmirror.com/git-sha1/-/git-sha1-0.1.2.tgz#599ac192b71875825e13a445f3a6e05118c2f745"
   integrity sha512-2e/nZezdVlyCopOCYHeW0onkbZg7xP1Ad6pndPy1rCygeRykefUS6r7oA5cJRGEFvseiaz5a/qUHFVX1dd6Isg==
 
+github-markdown-css@^5.2.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/github-markdown-css/-/github-markdown-css-5.5.0.tgz#799a2d8b11c8c36cd0239524e1f76307cd8f244c"
+  integrity sha512-Ncp4putm+cGteDhtNYKGdchM4uiIm5tmQcAQx/eEYhuM0sOdjZYNQOauQTaodjDQjfw7whU99MijwC1M0FUY4w==
+
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.npmmirror.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
@@ -5559,6 +5567,11 @@ highlight.js@^10.7.1:
   version "10.7.3"
   resolved "https://registry.npmmirror.com/highlight.js/-/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
   integrity sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==
+
+highlight.js@^11.5.1:
+  version "11.9.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.9.0.tgz#04ab9ee43b52a41a047432c8103e2158a1b8b5b0"
+  integrity sha512-fJ7cW7fQGCYAkgv4CPfwFHrfd/cLS4Hau96JuJ+ZTOWhjnhoeN1ub1tFmALm/+lW5z4WCAuAV9bm05AP0mS6Gw==
 
 hosted-git-info@^2.1.4:
   version "2.8.9"
@@ -6747,6 +6760,18 @@ mark.js@^8.11.1:
   version "8.11.1"
   resolved "https://registry.yarnpkg.com/mark.js/-/mark.js-8.11.1.tgz#180f1f9ebef8b0e638e4166ad52db879beb2ffc5"
   integrity sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==
+
+markdown-it-highlightjs@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/markdown-it-highlightjs/-/markdown-it-highlightjs-4.0.1.tgz#6b8eb6a3b971ed592db1ff160cfa5ce9f2e44232"
+  integrity sha512-EPXwFEN6P5nqR3G4KjT20r20xbGYKMMA/360hhSYFmeoGXTE6hsLtJAiB/8ID8slVH4CWHHEL7GX0YenyIstVQ==
+  dependencies:
+    highlight.js "^11.5.1"
+
+markdown-it-task-checkbox-pro@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-task-checkbox-pro/-/markdown-it-task-checkbox-pro-1.0.0.tgz#65a534109030bcd73df1c737d83220955641faeb"
+  integrity sha512-jiX6lrbnf/AgtkoOy8Xyke5NMhf6UgK7dqpFGfiWNnrRQSY7e5J4bKzDg3tureNihPAPGGqbcXqPEtMwpOrjvQ==
 
 markdown-it@^13.0.1:
   version "13.0.1"
