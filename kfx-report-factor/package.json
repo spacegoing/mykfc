@@ -1,0 +1,38 @@
+{
+	"name": "@kungfu-trader/kfx-report-factor",
+	"author": "kungfu-trader",
+	"version": "2.7.0-alpha.19",
+	"description": "KungFu Report with daily pnl calculate",
+	"license": "Apache-2.0",
+	"main": "package.json",
+	"repository": {
+		"url": "https://github.com/kungfu-trader/kfx-group-report.git"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
+	"kungfuConfig": {
+		"key": "FactorReport"
+	},
+	"kungfuBuild": {
+		"python": {
+			"dependencies": {
+				"plotly": "~=5.16"
+			}
+		}
+	},
+	"binary": {
+		"module_name": "kfx-report-factor",
+		"module_path": "dist/FactorReport",
+		"remote_path": "{module_name}/v{major}/v{version}",
+		"package_name": "{module_name}-v{version}-{platform}-{arch}-{configuration}.tar.gz",
+		"host": "https://prebuilt.libkungfu.cc"
+	},
+	"scripts": {
+		"build": "kfs extension build",
+		"clean": "kfs extension clean",
+		"format": "node ../../node_modules/@kungfu-trader/kungfu-core/.gyp/run-format-python.js src",
+		"dev": "kfs craft dev",
+		"package": "kfs extension package"
+	}
+}
