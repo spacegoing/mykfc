@@ -40,12 +40,11 @@
         "cfg": "yarn report -B backtest_config.json"
     },
     "dependencies": {
-        "@kungfu-trader/kungfu-core": "~2.7.0 || ~2.7.4-0",
+        "@kungfu-trader/kungfu-core": "~3.0.0 || ~3.0.3-0",
         "lerna": "^4.0.0",
-
         "wsrun": "^5.2.0"
     },
     "devDependencies": {
-        "@kungfu-trader/kungfu-sdk": "~2.7.0 || ~2.7.4-0"
+        "@kungfu-trader/kungfu-sdk": "~3.0.0 || ~3.0.3-0"
     }
 }
