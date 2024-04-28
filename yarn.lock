@@ -5642,12 +5642,7 @@ dayjs-business-days@^1.0.4:
   resolved "https://registry.yarnpkg.com/dayjs-business-days/-/dayjs-business-days-1.0.4.tgz#36e93e7566149e175c1541d92ce16e12145412bf"
   integrity sha512-kmb8Hvlhmv7INc2YXWew4SaEBJprqJ9C48CdlO1NTsqQa31ZEcO48ziFa3YFr5W9rdwB1nUmd5iIkLwgCkJ8nA==
 
-dayjs@^1.10.5, dayjs@~1.11.5:
-  version "1.11.10"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.10.tgz#68acea85317a6e164457d6d6947564029a6a16a0"
-  integrity sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==
-
-dayjs@^1.10.7:
+dayjs@^1.10.5, dayjs@^1.10.7, dayjs@~1.11.5:
   version "1.11.11"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.11.tgz#dfe0e9d54c5f8b68ccf8ca5f72ac603e7e5ed59e"
   integrity sha512-okzr3f11N6WuqYtZSvm+F776mB41wRZMhKP+hc34YdW+KmtYYK9iqvHSwo2k9FEH3fhGXvOPV6yz2IcSrfRUDg==
